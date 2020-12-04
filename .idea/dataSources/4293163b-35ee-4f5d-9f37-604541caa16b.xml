@@ -789,7 +789,7 @@ false Zulu
     <database id="2" parent="1" name="db-transformer">
       <ObjectId>16418</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>526</IntrospectionStateNumber>
+      <IntrospectionStateNumber>551</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="diesel_demo">
@@ -876,7 +876,7 @@ UC/10
 </Acl>
       <StateNumber>286</StateNumber>
       <Owner>wm</Owner>
-      <IntrospectionStateNumber>527</IntrospectionStateNumber>
+      <IntrospectionStateNumber>552</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="20" parent="2" name="plpgsql">

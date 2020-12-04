@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15e3a165-7f53-489a-9afe-ec3407e38956" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4293163b-35ee-4f5d-9f37-604541caa16b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4293163b-35ee-4f5d-9f37-604541caa16b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4293163b-35ee-4f5d-9f37-604541caa16b/storage_v2/_src_/database/db-transformer.Sp7Waw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4293163b-35ee-4f5d-9f37-604541caa16b/storage_v2/_src_/database/db-transformer.Sp7Waw/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -128,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607073519560</updated>
       <workItem from="1607073521106" duration="10186000" />
-      <workItem from="1607101800243" duration="656000" />
+      <workItem from="1607101800243" duration="3079000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1607073564993</created>
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607080649884</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add  delete_product fn">
+      <created>1607102718645</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607102718645</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +179,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="add establish_connections fn" />
-    <option name="LAST_COMMIT_MESSAGE" value="add establish_connections fn" />
+    <MESSAGE value="add  delete_product fn" />
+    <option name="LAST_COMMIT_MESSAGE" value="add  delete_product fn" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
