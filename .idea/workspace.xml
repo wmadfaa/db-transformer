@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15e3a165-7f53-489a-9afe-ec3407e38956" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/json.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607073519560</updated>
       <workItem from="1607073521106" duration="10186000" />
-      <workItem from="1607101800243" duration="4975000" />
+      <workItem from="1607101800243" duration="6970000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1607073564993</created>
@@ -165,7 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607110747910</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="read data from  json">
+      <created>1607112679542</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607112679542</updated>
+    </task>
+    <task id="LOCAL-00007" summary="show data from db">
+      <created>1607114607553</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607114607553</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +199,9 @@
     <MESSAGE value="add establish_connections fn" />
     <MESSAGE value="add  delete_product fn" />
     <MESSAGE value="add create,delete sale fn" />
-    <option name="LAST_COMMIT_MESSAGE" value="add create,delete sale fn" />
+    <MESSAGE value="read data from  json" />
+    <MESSAGE value="show data from db" />
+    <option name="LAST_COMMIT_MESSAGE" value="show data from db" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

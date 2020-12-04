@@ -79,6 +79,8 @@ fn delete_products_and_sales(conn: &PgConnection) {
 }
 
 fn main() {
+    use schema::products::dsl::*;
+    use schema::sales::dsl::*;
     let conn = establish_connections();
     let res = read_json_file();
 
@@ -96,5 +98,18 @@ fn main() {
             &_sale.quantity,
             &_sale.unit,
         );
+    }
+
+    let products_from_db = products
+        .load::<Product>(&conn)
+        .expect("Error loading products");
+
+    for product_from_db in products_from_db {
+        let product_sales = sales
+            .filter(product_id.eq(product_from_db.id))
+            .load::<Sale>(&conn)
+            .expect("Error loading sales");
+
+        println!("{:#?}", vec![(product_from_db, product_sales)]);
     }
 }

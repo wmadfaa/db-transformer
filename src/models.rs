@@ -1,6 +1,6 @@
 use super::schema::{products, sales};
 
-#[derive(Identifiable, Queryable)]
+#[derive(Identifiable, Queryable, Debug)]
 #[table_name = "products"]
 pub struct Product {
     pub id: i32,
@@ -8,7 +8,7 @@ pub struct Product {
     pub name: String,
 }
 
-#[derive(Identifiable, Queryable, Associations)]
+#[derive(Identifiable, Queryable, Associations, Debug)]
 #[belongs_to(Product)]
 #[table_name = "sales"]
 pub struct Sale {

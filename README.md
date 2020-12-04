@@ -7,9 +7,8 @@ this project inspired by the official diesel tutorials, and the transformer proj
 ---
 
 ## What db-transformer do?
--[ ] reading the configs from a **_config.toml_** file with predefined structure.
--[ ] creating a **postgres** database and connect to it.
--[ ] reading the data from a **json** file or from a **xml** file and transforming it to the postgres db.
+-[x] creating a **postgres** database and connect to it.
+-[x] reading the data from a **json** file and transforming it to the postgres db.
 
 ## Goals from build this app.
 - using the rust std lib.
