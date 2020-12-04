@@ -3,11 +3,13 @@ extern crate diesel;
 extern crate dotenv;
 
 use self::models::{NewProduct, NewSale, Product, Sale};
+use crate::json::read_json_file;
 use diesel::pg::PgConnection;
 use diesel::prelude::*;
 use dotenv::dotenv;
 use std::env;
 
+pub mod json;
 pub mod models;
 pub mod schema;
 
@@ -66,7 +68,7 @@ fn create_product<'a>(conn: &PgConnection, id: i32, category: &'a str, name: &'a
         ))
 }
 
-fn delete_products(conn: &PgConnection) {
+fn delete_products_and_sales(conn: &PgConnection) {
     use schema::products;
 
     delete_sales(&conn);
@@ -78,8 +80,21 @@ fn delete_products(conn: &PgConnection) {
 
 fn main() {
     let conn = establish_connections();
-    delete_products(&conn);
-    create_product(&conn, 1, "apple", "iphone");
-    delete_sales(&conn);
-    create_sale(&conn, "3".to_string(), &1, &1234527890, &2.0, "u.");
+    let res = read_json_file();
+
+    delete_products_and_sales(&conn);
+    for _product in &res.products {
+        create_product(&conn, _product.id, &_product.category, &_product.name);
+    }
+
+    for _sale in &res.sales {
+        create_sale(
+            &conn,
+            _sale.id.to_string(),
+            &_sale.product_id,
+            &_sale.date,
+            &_sale.quantity,
+            &_sale.unit,
+        );
+    }
 }
