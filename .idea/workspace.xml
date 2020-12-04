@@ -5,27 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15e3a165-7f53-489a-9afe-ec3407e38956" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sales.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sales.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diesel.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/00000000000000_diesel_initial_setup/down.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/00000000000000_diesel_initial_setup/up.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/2020-12-04-103549_create_products/down.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/2020-12-04-103549_create_products/up.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/2020-12-04-103600_create_sales/down.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/2020-12-04-103600_create_sales/up.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schema.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4293163b-35ee-4f5d-9f37-604541caa16b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4293163b-35ee-4f5d-9f37-604541caa16b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4293163b-35ee-4f5d-9f37-604541caa16b/storage_v2/_src_/database/db-transformer.Sp7Waw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4293163b-35ee-4f5d-9f37-604541caa16b/storage_v2/_src_/database/db-transformer.Sp7Waw/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +53,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="settings.editor.selected.configurable" value="language.rust.rustfmt" />
+    <property name="settings.editor.selected.configurable" value="language.rust" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -65,7 +61,24 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="cargo test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Cargo.Run">
+    <configuration name="Expand db_transformer::models" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="expand --bin db-transformer --color=always --theme=GitHub --tests models" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package db-transformer --bin db-transformer" />
@@ -78,22 +91,33 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+    <configuration name="test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="run" />
+      <option name="command" value="test" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.test" />
+        <item itemvalue="Cargo.Expand db_transformer::models" />
+        <item itemvalue="Cargo.Expand db_transformer::models" />
+        <item itemvalue="Cargo.Expand db_transformer::models" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
+    <option name="newResolveEnabled" value="true" />
     <option name="runRustfmtOnSave" value="true" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
     <option name="useRustfmt" value="true" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,7 +127,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607073519560</updated>
-      <workItem from="1607073521106" duration="4862000" />
+      <workItem from="1607073521106" duration="10186000" />
+      <workItem from="1607101800243" duration="656000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1607073564993</created>
@@ -119,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607077662125</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add establish_connections fn">
+      <created>1607080649884</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607080649884</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,11 +167,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="add establish_connections fn" />
+    <option name="LAST_COMMIT_MESSAGE" value="add establish_connections fn" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
